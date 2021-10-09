@@ -346,7 +346,6 @@ img {
   font-style: normal;
   font-size: 12px;
   line-height: 1.12;
-  border-bottom: 1px solid #e1e1e1;
 }
 
 .tel__link {
@@ -359,8 +358,10 @@ img {
 }
 
 .copyright {
-  margin-top: 22px;
+  padding-top: 22px;
   padding-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  background-color: #fff5f6;
   display: flex;
   flex-direction: column;
   align-items: center;
