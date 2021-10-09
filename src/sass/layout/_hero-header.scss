@@ -1,0 +1,218 @@
+$color-hero-background: #ffb8ca;
+$color-hero-background-circle: #ffa5ba;
+$color-mb-menu-background: #e17992;
+$color-mb-menu-border: #e18298;
+
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+img {
+  display: block;
+}
+
+list {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// HERO AND HEADER
+
+.hero {
+  position: relative;
+  height: 502px;
+  width: 100vw;
+
+  overflow: hidden;
+
+  background-color: $color-hero-background;
+
+  // background-image: url('./src/images/header-hero/icecreem-hero.mb.png');
+  // background-size: 171px;
+  // background-position: top 0 right 32px;
+
+  // @media (min-device-pixel-ratio: 2),
+  //   (-webkit-min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url('./src/images/header-hero/icecreem-hero.mb2x.png');
+  // }
+
+  &__circle {
+    position: absolute;
+    right: -62px;
+    bottom: 75px;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+
+    background-color: $color-hero-background-circle;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 6px;
+
+  &__logo {
+    width: 199px;
+    height: 50px;
+  }
+}
+
+.mobile-menu__button-open {
+  width: 40px;
+  border: none;
+  background-color: transparent;
+
+  &__line {
+    height: 1px;
+    width: 20px;
+    margin-bottom: 6px;
+
+    background-color: $color-accent;
+  }
+
+  &__line:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mobile-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 23px 20px;
+  z-index: 1;
+
+  background-color: $color-mb-menu-background;
+
+  &__button-close {
+    position: absolute;
+    top: 23px;
+    right: 28px;
+
+    width: 14px;
+    height: 14px;
+  }
+
+  &__button-modal {
+    margin-top: 60px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    padding: 16px;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.3;
+
+    text-align: center;
+
+    background-color: $color-background;
+    color: $color-accent;
+  }
+}
+
+.mobile-nav {
+  margin-top: 19px;
+
+  &__item {
+    width: 100vw;
+    padding: 12px 0 12px 0;
+    border-top: 1px solid $color-mb-menu-border;
+
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.28;
+
+    color: $color-background;
+  }
+  &__item:last-child {
+    border-bottom: 1px solid $color-mb-menu-border;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    color: $color-accent;
+  }
+}
+
+.hero-info {
+  position: absolute;
+
+  &__title {
+    margin-top: 137px;
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $color-background;
+  }
+
+  &__title--red {
+    font-size: 48px;
+    line-height: 96.5%;
+
+    color: $color-accent;
+  }
+}
+
+.hero-list {
+  display: flex;
+  position: absolute;
+  margin-top: 19px;
+
+  &__item {
+    margin-right: 8px;
+    padding: 9px 14px;
+    border-radius: 20px;
+
+    font-family: DM Sans;
+    font-size: 8px;
+    line-height: 1.25;
+  }
+
+  &__item--dark {
+    background-color: $color-accent;
+  }
+
+  &__item--light {
+    background-color: $color-background;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__link--dark {
+    color: $color-background;
+  }
+
+  &__link--light {
+    color: $color-accent;
+  }
+}
