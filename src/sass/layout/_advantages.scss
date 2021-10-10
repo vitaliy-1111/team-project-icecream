@@ -1,5 +1,5 @@
 .advantages-section {
-  background-color: #fff5f6;
+  background: #fff5f6;
   @media screen and (min-width: 1200px) {
     padding: 39px, 115px, 139px, 115;
   }
@@ -17,8 +17,10 @@
 
 .advantages-list {
   display: flex;
+  list-style: none;
 }
 .advantages-item {
+  width: 330px;
   @media screen and (min-width: 1200px) {
     &:not(:last-child) {
       padding-right: 30px;
@@ -40,4 +42,6 @@
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 2%;
+  @media screen and (min-width: 1200px) {
+  }
 }
