@@ -301,43 +301,15 @@ img {
   padding-left: 20px;
 }
 
-img {
-  display: block;
-}
-
-list {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .hero {
   position: relative;
   height: 502px;
   width: 100vw;
   overflow: hidden;
   background-color: #ffb8ca;
-  background-image: url("./src/images/header-hero/icecreem-hero.mb.png");
-  background-size: 171px;
-  background-position: top 0 right 32px;
-}
-
-.hero__circle {
-  position: absolute;
-  right: -62px;
-  bottom: 75px;
-  width: 346px;
-  height: 344px;
-  border-radius: 50%;
-  background-color: #ffa5ba;
-}
-
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("./src/images/header-hero/icecreem-hero.mb2x.png");
-  }
+  background-image: url("../images/header-hero/icecreem-hero_mb.png"), url("../images/header-hero/Ellipse_mb.png");
+  background-repeat: no-repeat;
+  background-position: bottom right 32px, bottom 75px right;
 }
 
 .header {
@@ -377,24 +349,24 @@ a {
 .mobile-menu {
   width: 100vw;
   height: 100vh;
+  padding-top: 23px;
   position: fixed;
   top: 0;
   right: 0;
-  padding: 23px 20px;
   z-index: 1;
   background-color: #e17992;
 }
 
 .mobile-menu__button-close {
-  position: absolute;
-  top: 23px;
-  right: 28px;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 23px;
+  border: none;
   width: 14px;
   height: 14px;
 }
 
 .mobile-menu__button-modal {
-  margin-top: 60px;
   width: 100%;
   border-radius: 20px;
   border: none;
@@ -409,14 +381,24 @@ a {
   color: #d41443;
 }
 
+.mobile-menu__button-modal-sign {
+  margin-left: 27px;
+}
+
 .mobile-nav {
   margin-top: 19px;
 }
 
 .mobile-nav__item {
+  width: 100%;
+}
+
+.mobile-nav__link {
+  display: block;
   width: 100vw;
-  padding: 12px 0 12px 0;
+  height: 100%;
   border-top: 1px solid #e18298;
+  padding: 12px 21px 12px 21px;
   font-family: DM Sans;
   font-weight: bold;
   font-size: 14px;
@@ -424,11 +406,11 @@ a {
   color: #ffffff;
 }
 
-.mobile-nav__item:last-child {
+.mobile-nav__link:last-child {
   border-bottom: 1px solid #e18298;
 }
 
-.mobile-nav__item:hover, .mobile-nav__item:focus {
+.mobile-nav__link:hover, .mobile-nav__link:focus {
   color: #d41443;
 }
 
