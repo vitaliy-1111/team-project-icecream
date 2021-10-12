@@ -73,6 +73,10 @@
   padding-top: 161px;
   min-height: 465px;
 
+  &:hover {
+    transition: transform 250ms linear;
+  }
+
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 130px;
@@ -296,39 +300,51 @@
   background-repeat: no-repeat;
   margin: 0 auto;
   padding-bottom: 50px;
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay {
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  background-color: #e17992;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.modal-text {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.76em;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .backdrop-product {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: transparent;
   z-index: 999;
 
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
   }
-}
 
-.modal-product {
-  width: 300px;
-  height: 450px;
-  background-color: #ffb8ca;
-
-  padding: 60px 15px;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-
-  @media screen and(min-width:758px) {
-    max-width: 500px;
-    max-height: 600px;
+  &.is-hidden .overlay {
+    transform: scale(0.7);
   }
 }
 
@@ -345,20 +361,5 @@
   top: 8px;
   align-items: center;
   cursor: pointer;
-  transition: 250ms var(--cubic-bezier);
-  &:hover,
-  &:focus {
-    fill: var(--accent-color);
-  }
-}
-
-.modal-text {
-  display: block;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.76em;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  margin: 0 auto;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
