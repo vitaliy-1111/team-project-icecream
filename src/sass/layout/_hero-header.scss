@@ -6,6 +6,11 @@ $color-mb-menu-border: #e18298;
 .container-hero {
   padding-right: 20px;
   padding-left: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-right: 34px;
+    padding-left: 34px;
+  }
 }
 
 // HERO AND HEADER
@@ -19,17 +24,42 @@ $color-mb-menu-border: #e18298;
 
   background-color: $color-hero-background;
 
+  @media screen and (min-width: 768px) {
+    height: 399px;
+  }
+
   background-image: url('../images/header-hero/icecreem-hero_mb.png'),
     url('../images/header-hero/Ellipse_mb.png');
   background-repeat: no-repeat;
   background-position: bottom right 32px, bottom 75px right;
 
-  // @media (min-device-pixel-ratio: 2),
-  //   (-webkit-min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   background-image: url('./src/images/header-hero/icecreem-hero.mb2x.png');
-  // }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/header-hero/icecreem-hero_mb2x.png'),
+      url('../images/header-hero/Ellipse_mb2x.png');
+    background-size: 171px, 258px;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/header-hero/icecreem-hero_tab.png'),
+      url('../images/header-hero/tasty_tab.png'), url('../images/header-hero/Ellipse_tab.png'),
+      url('../images/header-hero/milk_tab.png');
+    background-repeat: no-repeat;
+    background-position: bottom right 247px, bottom right 34px, bottom 46px right 137px,
+      bottom 28px left 34px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/header-hero/icecreem-hero_tab2x.png'),
+      url('../images/header-hero/Ellipse_tab2x.png'),
+      url('../images/header-hero/milk_tab2x.png') url('../images/header-hero/tasty_tab2x.png');
+    background-size: 143px, 168px, 324px, 124px;
+  }
 }
 
 .header {
@@ -38,9 +68,36 @@ $color-mb-menu-border: #e18298;
 
   margin-top: 6px;
 
+  @media screen and (min-width: 768px) {
+    margin-top: 37px;
+  }
+
   &__logo {
     width: 199px;
     height: 50px;
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+
+      border-radius: 22px;
+      border: none;
+      padding: 16px 40px;
+
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.3;
+
+      text-align: center;
+
+      background-color: $color-background;
+      color: $color-accent;
+    }
   }
 }
 
@@ -48,6 +105,11 @@ $color-mb-menu-border: #e18298;
   width: 40px;
   border: none;
   background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: 30px;
+  }
 
   &__line {
     height: 1px;
@@ -80,6 +142,10 @@ $color-mb-menu-border: #e18298;
   z-index: 1;
 
   background-color: $color-mb-menu-background;
+
+  @media screen and (min-width: 768px) {
+    width: 454px;
+  }
 
   &__button-close {
     display: block;
@@ -148,8 +214,44 @@ $color-mb-menu-border: #e18298;
 }
 
 .hero-info {
-  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
 
+.hero-info-right {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  &__list {
+    margin-top: 12px;
+  }
+
+  &__item {
+    margin-bottom: 13px;
+
+    font-family: DM Sans;
+    font-size: 8px;
+    line-height: 1.25;
+
+    color: $color-background;
+  }
+
+  &__number {
+    font-family: Titan One;
+    font-size: 28px;
+    line-height: 1.14;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $color-accent;
+  }
+}
+
+.hero-info-left {
   &__title {
     margin-top: 137px;
     font-family: Titan One;
@@ -160,6 +262,11 @@ $color-mb-menu-border: #e18298;
     text-transform: uppercase;
 
     color: $color-background;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 15px;
+      font-size: 22px;
+    }
   }
 
   &__title--red {
@@ -167,13 +274,16 @@ $color-mb-menu-border: #e18298;
     line-height: 96.5%;
 
     color: $color-accent;
-  }
-}
 
-.hero-list {
-  display: flex;
-  position: absolute;
-  margin-top: 19px;
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin-top: 19px;
+  }
 
   &__item {
     margin-right: 8px;
@@ -205,5 +315,38 @@ $color-mb-menu-border: #e18298;
 
   &__link--light {
     color: $color-accent;
+  }
+}
+
+.extra-info {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    margin-left: 120px;
+    margin-top: 66px;
+    width: 114px;
+  }
+
+  &__text {
+    @media screen and (min-width: 768px) {
+      font-family: DM Sans;
+      font-size: 8px;
+      line-height: 150%;
+
+      color: $color-secondary-background;
+    }
+  }
+
+  &__button {
+    @media screen and (min-width: 768px) {
+      margin-top: 7px;
+      padding: 0;
+      border: none;
+      border-radius: 50px;
+
+      color: $color-hero-background;
+    }
   }
 }
