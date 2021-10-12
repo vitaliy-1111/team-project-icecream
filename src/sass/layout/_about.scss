@@ -1,144 +1,156 @@
-.section-about {
-  padding-top: 125px;
-  padding-bottom: 19px;
-  background-color: #fff5f6;
-  transition: background-size 500ms linear;
-  background-image: url(../images/about/about-bg-mobile.png), url(../images/about/cow-mobile-x1.png);
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain, 280px 280px;
-  background-position: right 0 bottom 70px, top 263px left 0;
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/about/cow-tablet-x1.png);
+.about {
+  margin-top: 125px;
+  @media screen and (max-width: 480px) {
+    background-image: url(../images/about/mobile/about-pic-bg1.png);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: 340px 340px;
-    background-position: top 281px left 0;
-    padding-bottom: 66px;
+    background-position: left 0px bottom 60px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/mobile/about-pic-bg1@2x.png);
+    }
   }
   @media screen and (min-width: 1200px) {
-    min-height: 850px;
-    background-image: url(../images/about/about-bg-desktop.png),
-      url(../images/about/cow-desktop-x1.png);
-    background-repeat: no-repeat, no-repeat;
-    background-size: contain, 516px 516px;
-    background-position: right 0 bottom 70px, top 300px left 0;
-  }
-}
-.section-about__pre-title {
-  font-family: Titan One;
-  font-size: 18px;
-  line-height: 1.17em;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffa5ba;
-  margin: 0 auto;
-  margin-bottom: 15px;
+    background-image: url(../images/about/desktop/about-pic-bg1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left 0px bottom -25px;
 
-  @media screen and (min-width: 768px) {
-    font-size: 26px;
-    line-height: 1.15em;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/desktop/about-pic-bg1@2x.png);
+    }
+  }
+  .about__flex {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
   }
 
-  @media screen and (min-width: 1200px) {
-    font-size: 30px;
-    line-height: 1.13em;
-  }
-}
-.section-about__title {
-  margin-bottom: 351px;
-  font-family: Titan One;
-  font-size: 34px;
-  line-height: 1.14em;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d41443;
+  &__text {
+    display: block;
+    font-family: Titan One;
+    font-size: 18px;
+    line-height: 1.17em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffa5ba;
+    margin: 0 auto;
+    margin-bottom: 15px;
 
-  @media screen and (min-width: 768px) {
-    font-size: 48px;
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.15em;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: 1.13em;
+    }
+  }
+
+  &__title {
+    font-family: Titan One;
+    font-size: 34px;
     line-height: 1.14em;
-    margin-bottom: 100px;
-  }
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
 
-  @media screen and (min-width: 1200px) {
-    font-size: 58px;
-    line-height: 1.14em;
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 58px;
+    }
+  }
+  &__picture {
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+  }
+  &__img {
+    display: inline-block;
+    margin-bottom: 46px;
   }
 }
-.section-about__img {
-  margin-bottom: 46px;
-}
-.section-about__bold-text {
-  margin-bottom: 47px;
-  width: 220px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 162%;
-  /* or 19px */
 
-  color: #000000;
+.description {
+  padding-left: 30px;
+  padding-right: 30px;
   @media screen and (min-width: 768px) {
-    margin-left: 360px;
-    width: 340px;
-    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 17px;
+    padding-right: 0px;
+    padding-top: 50px;
   }
   @media screen and (min-width: 1200px) {
-    margin-left: 500px;
-    width: 460px;
-    font-size: 16px;
+    padding-left: 70px;
   }
-}
-.section-about__text {
-  width: 220px;
-  margin-bottom: 17px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 162%;
-  /* or 19px */
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 500;
+    line-height: 1.62;
+    font-size: 12px;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.76;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 35px;
+      font-size: 16px;
+      letter-spacing: 0.04em;
+    }
+  }
 
-  color: #907e82;
-  @media screen and (min-width: 768px) {
-    margin-left: 360px;
-    margin-bottom: 62px;
-    width: 340px;
-    font-size: 14px;
+  &__text {
+    margin-bottom: 17px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: #907e82;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 60px;
+      font-size: 14px;
+      line-height: 1.76;
+      letter-spacing: 0.04em;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 45px;
+      line-height: 1.94;
+    }
   }
-  @media screen and (min-width: 1200px) {
-    margin-left: 500px;
-    margin-bottom: 62px;
-    width: 460px;
-    font-size: 16px;
+  &__text-bottom {
+    display: inline-block;
+    margin-top: 10px;
   }
 }
-.section-about__btn {
-  height: 44px;
-  padding: 10px 37px;
+
+.header-title {
+  margin-bottom: 26px;
+}
+
+.about__button {
+  width: 176px;
+  border-radius: 20px;
   border: none;
+  padding: 12px;
+
+  font-weight: bold;
+  line-height: 1.3;
 
   background-color: #ffffff;
-  border-radius: 22px;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  color: $color-accent;
 
-  color: #d41443;
-  margin-left: 30px;
-  @media screen and (min-width: 768px) {
-    margin-left: 360px;
+  &:hover,
+  &:focus {
+    background: #ecebeb;
   }
-  @media screen and (min-width: 1200px) {
-    margin-left: 500px;
-  }
+}
+
+.button__icon {
+  margin-left: 13px;
+
 }
