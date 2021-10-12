@@ -1,78 +1,177 @@
 <div class="hero">
+
     <div class="container-hero">
 
+        <picture class="hero__Ellipse">
+            <source srcset="./images/header-hero/Ellipse.png 1x, ./images/header-hero/Ellipse2x.png 2x"
+                media="(min-width:1200px)">
+            <source srcset="./images/header-hero/Ellipse_tab.png 1x, ./images/header-hero/Ellipse_tab2x.png 2x"
+                media="(min-width:768px)">
+            <source srcset="./images/header-hero/Ellipse_mb.png 1x, ./images/header-hero/Ellipse_mb2x.png 2x"
+                media="(min-width:320px)">
+            <img src="./images/header-hero/Ellipse.png" alt="Ellipse">
+        </picture>
+
+        <picture class="hero__icecreem-hero">
+            <source srcset="./images/header-hero/icecreem-hero.png 1x, ./images/header-hero/icecreem-hero2x.png 2x"
+                media="(min-width:1200px)">
+            <source
+                srcset="./images/header-hero/icecreem-hero_tab.png 1x, ./images/header-hero/icecreem-hero_tab2x.png 2x"
+                media="(min-width:768px)">
+            <source
+                srcset="./images/header-hero/icecreem-hero_mb.png 1x, ./images/header-hero/icecreem-hero_mb2x.png 2x"
+                media="(min-width:320px)">
+            <img src="./images/header-hero/icecreem-hero.png" alt="icecreem hero">
+        </picture>
+
+        <picture class="hero__tasty">
+            <source srcset="./images/header-hero/tasty.png 1x, ./images/header-hero/tasty2x.png 2x"
+                media="(min-width:1200px)">
+            <source srcset="./images/header-hero/tasty_tab.png 1x, ./images/header-hero/tasty_tab2x.png 2x"
+                media="(min-width:768px)">
+            <img src="./images/header-hero/tasty.png" alt="tasty">
+        </picture>
+
+        <picture class="hero__milk">
+            <source srcset="./images/header-hero/milk.png 1x, ./images/header-hero/milk2x.png 2x"
+                media="(min-width:1200px)">
+            <source srcset="./images/header-hero/milk_tab.png 1x, ./images/header-hero/milk_tab2x.png 2x"
+                media="(min-width:768px)">
+            <img src="./images/header-hero/milk.png" alt="tasty">
+        </picture>
+
         <header class="header">
+
             <a href="">
-                <img
-                    class="header__logo" 
+                <img class="header__logo"
                     srcset="./images/header-hero/logo-mb.png 1x, ./images/header-hero/logo-mb2x.png 2x"
-                    src="./images/header-hero/logo-mb.png" 
-                    alt="logo" 
-                />
+                    src="./images/header-hero/logo-mb.png" alt="logo" />
             </a>
-            
+
+            <nav class="navigation">
+
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link link"> Home </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#advantages" class="navigation__link link"> About us </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#about" class="navigation__link link"> How it’s made? </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#products" class="navigation__link link"> Our products </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#contacts" class="navigation__link link"> Contact </a>
+                    </li>
+                </ul>
+
+            </nav>
+
+
             <button class="mobile-menu__button-open" data-menu-open>
                 <svg class="mobile-menu__button-open-sign" width="20" height="12">
                     <use href="./images/header-hero/svg/symbol-defs.svg#icon-sign-burger"></use>
                 </svg>
             </button>
 
+            <button class="header__button">
+                Buy now
+                <svg class="mobile-menu__button-modal-sign" width="5" height="8">
+                    <use href="./images/header-hero/svg/symbol-defs.svg#icon-sign-buy"></use>
+                </svg>
+            </button>
+
+
             <div class="mobile-menu is-hidden" data-menu>
                 <div class="container-hero">
 
-                <button class="mobile-menu__button-close" data-menu-close>
-                    <svg class="mobile-menu__button-close-sign" width="14" height="14">
-                        <use href="./images/header-hero/svg/symbol-defs.svg#icon-sign-close"></use>
-                    </svg>
-                </button>
+                    <button class="mobile-menu__button-close" data-menu-close>
+                        <svg class="mobile-menu__button-close-sign" width="14" height="14">
+                            <use href="./images/header-hero/svg/symbol-defs.svg#icon-sign-close"></use>
+                        </svg>
+                    </button>
 
-                <button class="mobile-menu__button-modal">
-                    Buy now
-                    <svg class="mobile-menu__button-modal-sign" width="5" height="8">
-                        <use href="./images/header-hero/svg/symbol-defs.svg#icon-sign-buy"></use>
-                    </svg>
-                </button>
+                    <button class="mobile-menu__button-modal">
+                        Buy now
+                        <svg class="mobile-menu__button-modal-sign" width="5" height="8">
+                            <use href="./images/header-hero/svg/symbol-defs.svg#icon-sign-buy"></use>
+                        </svg>
+                    </button>
 
                 </div>
 
                 <ul class="mobile-nav list">
-                    <li class="mobile-nav__item"> 
-                        <a class="mobile-nav__link link" href=""> Home</a> 
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link link" href=""> Home</a>
                     </li>
-                    <li class="mobile-nav__item"> 
-                        <a class="mobile-nav__link link" href=""> About us</a> 
+                    <li class="mobile-nav__item">
+                        <a href="#advantages" class="mobile-nav__link link" href=""> About us</a>
                     </li>
-                    <li class="mobile-nav__item"> 
-                        <a class="mobile-nav__link link" href=""> How it’s made</a> 
+                    <li class="mobile-nav__item">
+                        <a href="#about" class="mobile-nav__link link" href=""> How it’s made</a>
                     </li>
-                    <li class="mobile-nav__item"> 
-                        <a class="mobile-nav__link link" href=""> Our products</a> 
+                    <li class="mobile-nav__item">
+                        <a href="#products" class="mobile-nav__link link" href=""> Our products</a>
                     </li>
-                    <li class="mobile-nav__item"> 
-                        <a class="mobile-nav__link link" href=""> Contact</a> 
+                    <li class="mobile-nav__item">
+                        <a href="#contacts" class="mobile-nav__link link" href=""> Contact</a>
                     </li>
                 </ul>
-
             </div>
         </header>
 
-        
-        <div class="hero-info">
-        <h1 class="hero-info__title">
-            ice cream <br> made with <br> <span class="hero-info__title--red">passion</span>
-        </h1>
 
-        <ul class="hero-list list">
-            <li class="hero-list__item hero-list__item--dark"> 
-                <a class="hero-list__link hero-list__link--dark link" href="">Products</a>
-            </li>
-            <li class="hero-list__item hero-list__item--light"> 
-                <a class="hero-list__link hero-list__link--light link" href="">How it’s made?</a>
-            </li>
-        </ul>
+        <div class="hero-info">
+
+            <div class="hero-info-left">
+                <h1 class="hero-info-left__title">
+                    ice cream <br> made with <br> <span class="hero-info-left__title--red">passion</span>
+                </h1>
+
+                <ul class="hero-info-left__list list">
+                    <li class="hero-info-left__item hero-info-left__item--dark">
+                        <a href="#products" class="hero-info-left__link hero-info-left__link--dark link">Products</a>
+                    </li>
+                    <li class="hero-info-left__item hero-info-left__item--light">
+                        <a href="#about" class="hero-info-left__link hero-info-left__link--light link" href="">How it’s
+                            made?</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="hero-info-right">
+                <ul class="hero-info-right__list list">
+                    <li class="hero-info-right__item">
+                        <span class="hero-info-right__number">16</span>
+                        <br> cafes
+                    </li>
+                    <li class="hero-info-right__item">
+                        <span class="hero-info-right__number">23</span>
+                        <br> food trucks
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="extra-info">
+            <p class="extra-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et</p>
+            <button class="extra-info__button">
+                <picture>
+                    <source
+                        srcset="./images/header-hero/arrow-right_tab.png 1x, ./images/header-hero/arrow-right_tab2x.png 2x"
+                        media="(min-width:768px)">
+                    <source srcset="./images/header-hero/arrow-right.png 1x, ./images/header-hero/arrow-right2x.png 2x"
+                        media="(min-width:1200px)">
+                    <img src="./images/header-hero/arrow-right.png" alt="arrow">
+                </picture>
+            </button>
         </div>
     </div>
 
     <script src="./menu.js"></script>
 </div>
-

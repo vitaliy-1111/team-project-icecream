@@ -16,7 +16,6 @@
 
   // margin-top: 113px;
   margin-bottom: 17px;
-  
 
   @media screen and (min-width: 768px) {
     width: 340px;
@@ -93,7 +92,16 @@
     align-items: center;
   }
 }
-
+.social-list {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 46px;
+}
+.social-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .tel {
   display: flex;
   justify-content: flex-end;

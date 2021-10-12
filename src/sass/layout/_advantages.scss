@@ -1,49 +1,61 @@
 .advantages-section {
-  background: #fff5f6;
-
+  padding-top: 120px;
+  padding-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+}
+.advantages-list {
   @media screen and (min-width: 320px) {
-    padding-top: 39px;
-    padding-left: 20px;
-    padding-bottom: 97px;
+    display: inline-block;
   }
   @media screen and (min-width: 768px) {
-    padding-top: 66px;
-    padding-left: 36px;
-    padding-bottom: 136px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 39px;
-    padding-left: 115px;
-    padding-bottom: 139px;
-  }
-}
-
-.visually-hidden {
-  visibility: hidden;
-}
-
-@media screen and (min-width: 768px) {
-  .advantages-list {
     display: flex;
   }
 }
 
 .advantages-item {
-  width: 330px;
-
-  @media screen and (min-width: 320px) {
-    &:not(:last-child) {
-      padding-bottom: 38px;
-    }
-  }
+  position: relative;
+  width: 230px;
   @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 60px);
     &:not(:last-child) {
-      padding-right: 60px;
+      margin-right: 60px;
     }
   }
-  @media screen and (min-width: 1200px) {
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 50px;
+
+    @media screen and (min-width: 320px) {
+      top: -66px;
+    }
+    @media screen and (min-width: 768px) {
+      top: -86px;
+    }
+    @media screen and (min-width: 1200px) {
+      top: -90px;
+    }
+    background-repeat: no-repeat;
+  }
+  &:nth-child(1)::before {
+    width: 33px;
+    background-image: url(../images/advatages/advant1.png);
+  }
+  &:nth-child(2)::before {
+    width: 50px;
+    background-image: url(../images/advatages/advant2.png);
+  }
+  &:nth-child(3)::before {
+    width: 44px;
+    background-image: url(../images/advatages/advant3.png);
+  }
+  @media screen and (max-width: 767px) {
     &:not(:last-child) {
-      padding-right: 30px;
+      margin-bottom: 104px;
     }
   }
 }
@@ -52,19 +64,18 @@
   color: #d41443;
   font-family: Titan One;
   font-weight: 400;
-  font-size: 58px;
   line-height: 1.2;
   letter-spacing: 4%;
   @media screen and (min-width: 320px) {
-    padding-top: 16px;
+    font-size: 36px;
   }
   @media screen and (min-width: 768px) {
-    padding-top: 36px;
-    padding-bottom: 15px;
+    font-size: 48px;
+    margin-bottom: 13px;
   }
-  @media screen and (min-width: 768px) {
-    padding-top: 40px;
-    padding-bottom: 15px;
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    margin-bottom: 15px;
   }
 }
 
@@ -72,7 +83,18 @@
   color: #000000;
   font-family: DM Sans;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.8;
   letter-spacing: 2%;
+  @media screen and (min-width: 320px) {
+    font-size: 12px;
+    // width: 230px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    // width: 180px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    // max-width: 330px;
+  }
 }
