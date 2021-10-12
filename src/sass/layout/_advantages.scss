@@ -1,27 +1,30 @@
-.advantages {
-  padding-top: 30px;
-}
-.container {
-  padding-right: 20px;
-}
-
-.visually-hidden {
-  visibility: hidden;
-}
-@media screen and (min-width: 320px) {
-  .advantages-list {
-    display: inline-block;
+.advantages-section {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 70px;
   }
 }
-@media screen and (min-width: 768px) {
-  .advantages-list {
+.advantages-list {
+  @media screen and (min-width: 320px) {
+    display: inline-block;
+  }
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 }
 
 .advantages-item {
   position: relative;
-  width: 330px;
+  width: 230px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 60px);
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -50,27 +53,9 @@
     width: 44px;
     background-image: url(../images/advatages/advant3.png);
   }
-  @media screen and (min-width: 320px) {
-    margin-top: 104px;
+  @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 104px;
-    }
-    &:last-child {
-      margin-bottom: 97px;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    margin-top: 152px;
-    margin-bottom: 140px;
-    &:not(:last-child) {
-      padding-right: 60px;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    margin-top: 64px;
-    margin-bottom: 139px;
-    &:not(:last-child) {
-      padding-right: 30px;
     }
   }
 }
@@ -86,11 +71,11 @@
   }
   @media screen and (min-width: 768px) {
     font-size: 48px;
-    padding-bottom: 13px;
+    margin-bottom: 13px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 58px;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -102,14 +87,14 @@
   letter-spacing: 2%;
   @media screen and (min-width: 320px) {
     font-size: 12px;
-    width: 230px;
+    // width: 230px;
   }
   @media screen and (min-width: 768px) {
     font-size: 14px;
-    width: 180px;
+    // width: 180px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
-    max-width: 330px;
+    // max-width: 330px;
   }
 }
