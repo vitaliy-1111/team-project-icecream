@@ -2,35 +2,33 @@
   font-family: 'DM Sans', sans-serif;
 }
 
-p,
-ul,
-li,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-}
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-body {
-  margin: 0px;
-  background-color: #fff5f6;
-}
+// p,
+// ul,
+// li,
+// div,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   margin-top: 0;
+//   margin-bottom: 0;
+//   padding: 0;
+// }
+// ul {
+//   margin-top: 0;
+//   margin-bottom: 0;
+//   padding-left: 0;
+// }
+// body {
+//   margin: 0px;
+//   background-color: #fff5f6;
+// }
 .background {
   height: 100%;
   background: linear-gradient(0deg, #fff5f6 83%, #ffffff 50%);
 }
-
-
 
 .contacts {
   display: flex;
@@ -171,7 +169,7 @@ body {
   }
 }
 
-.contacts__city-li{
+.contacts__city-li {
   margin-bottom: 10px;
 }
 .contacts__city-name {
@@ -180,8 +178,6 @@ body {
   line-height: 186%;
   letter-spacing: 0.04em;
   color: #000000;
-
-  
 
   @media screen and (min-width: 320px) and (max-width: 768px) {
     font-size: 12px;
@@ -194,7 +190,7 @@ body {
   }
 }
 
-.contacts__text-li{
+.contacts__text-li {
   margin-bottom: 32px;
 }
 .contacts__city-text {
@@ -219,7 +215,7 @@ body {
     padding-bottom: 32px;
   }
 }
-.contacts__schedule-li{
+.contacts__schedule-li {
   margin-bottom: 9px;
 }
 .contacts__schedule {
@@ -228,8 +224,6 @@ body {
   line-height: 186%;
   letter-spacing: 0.04em;
   color: #000000;
-
-  
 
   @media screen and (min-width: 320px) and (max-width: 768px) {
     font-size: 12px;
@@ -274,7 +268,7 @@ body {
   list-style-type: none;
   padding: 0px;
 }
-.contacts__list {
+.link-list {
   @media screen and (min-width: 320px) and (max-width: 768px) {
     margin-top: 25px;
   }
@@ -360,8 +354,6 @@ body {
 }
 .button-location {
   @extend .font;
-
-  
 
   background: #d41342;
   color: #ffffff;
