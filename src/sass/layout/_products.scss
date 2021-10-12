@@ -1,15 +1,27 @@
 .product {
   background-color: $color-background;
+  padding-top: 121px;
+  padding-bottom: 98px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 121px;
+    padding-bottom: 112px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
 }
 
 .product-list {
   @media screen and (min-width: 768px) {
     display: flex;
-    margin: -20px;
+    margin: -10px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin: -24px;
+    margin: -12px;
   }
 }
 
@@ -23,7 +35,6 @@
   color: #ffa5ba;
   margin: 0 auto;
   margin-bottom: 15px;
-  padding-top: 121px;
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
@@ -44,7 +55,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
-  padding-bottom: 144px;
+  margin-bottom: 144px;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -160,8 +171,7 @@
       background-image: url('../images/products/png/shake-tab.png');
     }
     width: calc((100% - 6 * 10px) / 3);
-    margin: 20px;
-    margin-bottom: 112px;
+    margin: 10px;
   }
   @media screen and (min-width: 1200px) {
     &:nth-child(1):before {
@@ -205,7 +215,7 @@
       background-image: url('../images/products/png/shake-desk.png');
     }
     width: calc((100% - 6 * 12px) / 3);
-    margin: 24px;
+    margin: 12px;
     margin-bottom: 112px;
   }
 }
@@ -285,4 +295,69 @@
   background-repeat: no-repeat;
   margin: 0 auto;
   padding-bottom: 50px;
+}
+
+.backdrop-product {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal-product {
+  width: 300px;
+  height: 450px;
+  background-color: #ffb8ca;
+
+  padding: 60px 15px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+
+  @media screen and(min-width:758px) {
+    max-width: 500px;
+    max-height: 600px;
+  }
+}
+
+.modal-product__close {
+  display: flex;
+  background-color: transparent;
+
+  width: 30px;
+  height: 30px;
+
+  border: none;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  align-items: center;
+  cursor: pointer;
+  transition: 250ms var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.modal-text {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.76em;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin: 0 auto;
 }
