@@ -1,27 +1,18 @@
-.advantages-section {
-  background: #fff5f6;
-
-  @media screen and (min-width: 320px) {
-    padding-top: 39px;
-    padding-left: 20px;
-    padding-bottom: 97px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-top: 66px;
-    padding-left: 36px;
-    padding-bottom: 136px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 39px;
-    padding-left: 115px;
-    padding-bottom: 139px;
-  }
+.advantages {
+  padding-top: 30px;
+}
+.container {
+  padding-right: 20px;
 }
 
 .visually-hidden {
   visibility: hidden;
 }
-
+@media screen and (min-width: 320px) {
+  .advantages-list {
+    display: inline-block;
+  }
+}
 @media screen and (min-width: 768px) {
   .advantages-list {
     display: flex;
@@ -29,19 +20,55 @@
 }
 
 .advantages-item {
+  position: relative;
   width: 330px;
+  &::before {
+    content: '';
+    position: absolute;
+    height: 50px;
 
+    @media screen and (min-width: 320px) {
+      top: -66px;
+    }
+    @media screen and (min-width: 768px) {
+      top: -86px;
+    }
+    @media screen and (min-width: 1200px) {
+      top: -90px;
+    }
+    background-repeat: no-repeat;
+  }
+  &:nth-child(1)::before {
+    width: 33px;
+    background-image: url(../images/advatages/advant1.png);
+  }
+  &:nth-child(2)::before {
+    width: 50px;
+    background-image: url(../images/advatages/advant2.png);
+  }
+  &:nth-child(3)::before {
+    width: 44px;
+    background-image: url(../images/advatages/advant3.png);
+  }
   @media screen and (min-width: 320px) {
+    margin-top: 104px;
     &:not(:last-child) {
-      padding-bottom: 38px;
+      margin-bottom: 104px;
+    }
+    &:last-child {
+      margin-bottom: 97px;
     }
   }
   @media screen and (min-width: 768px) {
+    margin-top: 152px;
+    margin-bottom: 140px;
     &:not(:last-child) {
       padding-right: 60px;
     }
   }
   @media screen and (min-width: 1200px) {
+    margin-top: 64px;
+    margin-bottom: 139px;
     &:not(:last-child) {
       padding-right: 30px;
     }
@@ -52,18 +79,17 @@
   color: #d41443;
   font-family: Titan One;
   font-weight: 400;
-  font-size: 58px;
   line-height: 1.2;
   letter-spacing: 4%;
   @media screen and (min-width: 320px) {
-    padding-top: 16px;
+    font-size: 36px;
   }
   @media screen and (min-width: 768px) {
-    padding-top: 36px;
-    padding-bottom: 15px;
+    font-size: 48px;
+    padding-bottom: 13px;
   }
-  @media screen and (min-width: 768px) {
-    padding-top: 40px;
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
     padding-bottom: 15px;
   }
 }
@@ -72,7 +98,18 @@
   color: #000000;
   font-family: DM Sans;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.8;
   letter-spacing: 2%;
+  @media screen and (min-width: 320px) {
+    font-size: 12px;
+    width: 230px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    width: 180px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    max-width: 330px;
+  }
 }
