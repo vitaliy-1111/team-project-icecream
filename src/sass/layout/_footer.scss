@@ -101,6 +101,15 @@
     margin-right: 30px;
   }
 }
+
+.social__icon {
+  transition: fill 250ms linear;
+  fill: #fea5bb;
+  &:hover,
+  &:focus {
+    fill: #d41443;
+  }
+}
 .tel {
   display: flex;
   justify-content: flex-end;
@@ -126,9 +135,14 @@
 .tel__link {
   text-decoration: none;
   margin-bottom: 43px;
-
+  margin-left: 5px;
+  transition: transform 250ms linear;
   @media screen and (min-width: 767px) {
     margin-bottom: 0px;
+  }
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
   }
 }
 
