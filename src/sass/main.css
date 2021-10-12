@@ -383,7 +383,8 @@ img {
   .hero {
     background-image: url("../images/header-hero/icecreem-hero_tab.png"), url("../images/header-hero/tasty_tab.png"), url("../images/header-hero/Ellipse_tab.png"), url("../images/header-hero/milk_tab.png");
     background-repeat: no-repeat;
-    background-position: bottom right 247px, bottom right 34px, bottom 46px right 137px, bottom 28px left 34px;
+    background-position: bottom right 247px, bottom right 34px, bottom 46px right 137px,
+ bottom 28px left 34px;
   }
 }
 
@@ -398,7 +399,8 @@ img {
   .hero {
     background-image: url("../images/header-hero/icecreem-hero.png"), url("../images/header-hero/tasty.png"), url("../images/header-hero/Ellipse.png"), url("../images/header-hero/milk.png");
     background-repeat: no-repeat;
-    background-position: bottom right 450px, bottom right 109px, bottom 75px right 267px, bottom 45px left 77px;
+    background-position: bottom right 450px, bottom right 109px, bottom 75px right 267px,
+ bottom 45px left 77px;
   }
 }
 
@@ -2933,6 +2935,8 @@ img {
   color: #d41443;
 }
 
+
+=======
 .copyright-container {
   max-width: 480px;
 }
@@ -2948,6 +2952,7 @@ img {
     max-width: 1280px;
   }
 }
+
 
 .copyright {
   padding-top: 22px;

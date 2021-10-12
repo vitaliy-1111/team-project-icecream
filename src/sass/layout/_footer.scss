@@ -1,23 +1,8 @@
-// .container {
-//   max-width: 480px;
-//   // background-color: $color-secondary-background;
-//   padding-left: 20px;
-//   padding-right: 20px;
 
-//   @media screen and (min-width: 768px) {
-//     max-width: 768px;
 
-//     padding-left: 36px;
-//     padding-right: 36px;
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     max-width: 1280px;
-
-//     padding-left: 115px;
-//     padding-right: 115px;
-//   }
-// }
+.section{
+  background-color: $color-secondary-background;
+}
 
 .footer-title {
   width: 232px;
@@ -29,7 +14,7 @@
   line-height: 1.1;
   color: #ffa5ba;
 
-  margin-top: 113px;
+  // margin-top: 113px;
   margin-bottom: 17px;
 
   @media screen and (min-width: 768px) {
@@ -38,7 +23,7 @@
 
     font-size: 26px;
 
-    margin-top: 165px;
+    // margin-top: 165px;
     margin-bottom: 16px;
   }
 
@@ -89,12 +74,18 @@
 }
 
 .footer-flex {
+
+  padding-top: 113px;
+ 
+
   @media screen and (min-width: 767px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     // при добавлении иконок поставить align-items: flex-start;
     align-items: center;
+
+    padding-top: 165px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -144,18 +135,6 @@
 
 .tel__number {
   color: $color-accent;
-}
-
-.copyright-container {
-  max-width: 480px;
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    max-width: 1280px;
-  }
 }
 
 .copyright {
