@@ -1,5 +1,5 @@
 .about {
-  margin-top: 125px;
+  padding-top: 125px;
   @media screen and (max-width: 480px) {
     background-image: url(../images/about/mobile/about-pic-bg1.png);
     background-size: contain;
@@ -72,6 +72,9 @@
   &__img {
     display: inline-block;
     margin-bottom: 46px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 39px;
+    }
   }
 }
 
@@ -152,5 +155,4 @@
 
 .button__icon {
   margin-left: 13px;
-
 }
