@@ -8,6 +8,7 @@ $color-button-hover: #ecebeb;
   position: relative;
   padding-right: 20px;
   padding-left: 20px;
+  overflow: hidden;
 
   height: 100%;
 
@@ -207,13 +208,16 @@ $color-button-hover: #ecebeb;
 
 .mobile-menu.is-hidden {
   opacity: 0;
-  visibility: hidden;
+  // visibility: hidden;
   pointer-events: none;
+  transform: translate(150%);
 }
 
 .mobile-menu {
   width: 100vw;
   height: 100vh;
+  transform: translate(0);
+  transition: transform 500ms linear;
 
   padding-top: 23px;
 
