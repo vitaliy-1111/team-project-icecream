@@ -1,25 +1,40 @@
 .section-gallery {
   padding-top: 50px;
   padding-bottom: 40px;
+
   background-image: linear-gradient(to bottom, #fff5f6 45%, #ffffff 45%);
   background-size: 100%;
+
   @media screen and (min-width: 768px) {
     padding-top: 70px;
     padding-bottom: 60px;
   }
 }
-// .section-gallery__container {
-//   padding-left: 0;
-//   @media screen and (min-width: 340px) {
-//     padding-left: 15px;
-//   }
-//   @media screen and (min-width: 340px) {
-//     padding-left: 30px;
-//   }
-//   @media screen and (min-width: 400px) {
-//     padding-left: 60px;
-//   }
-// }
+.section-gallery__container {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 340px) {
+    max-width: 480px;
+    padding-left: 20px;
+  }
+  @media screen and (min-width: 420px) {
+    padding-left: 40px;
+  }
+  @media screen and (min-width: 480px) {
+    padding-left: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1080px;
+    padding-left: 15px;
+  }
+}
 .wrapper-container {
   position: relative;
   height: 122px;
