@@ -1,5 +1,6 @@
 .about {
   padding-top: 125px;
+  background-color: $color-secondary-background;
   @media screen and (max-width: 480px) {
     background-image: url(../images/about/mobile/about-pic-bg1.png);
     background-size: contain;
