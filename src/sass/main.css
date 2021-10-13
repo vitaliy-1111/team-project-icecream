@@ -1277,6 +1277,7 @@ img {
 
 .about {
   padding-top: 125px;
+  background-color: #fff5f6;
 }
 
 @media screen and (max-width: 480px) {
@@ -1486,6 +1487,7 @@ img {
 .advantages-section {
   padding-top: 120px;
   padding-bottom: 50px;
+  background-color: #fff5f6;
 }
 
 @media screen and (min-width: 768px) {
@@ -3011,6 +3013,16 @@ img {
   margin-right: 30px;
 }
 
+.social__icon {
+  -webkit-transition: fill 250ms linear;
+  transition: fill 250ms linear;
+  fill: #fea5bb;
+}
+
+.social__icon:hover, .social__icon:focus {
+  fill: #d41443;
+}
+
 .tel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3043,12 +3055,22 @@ img {
 .tel__link {
   text-decoration: none;
   margin-bottom: 43px;
+  margin-left: 5px;
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
 }
 
 @media screen and (min-width: 767px) {
   .tel__link {
     margin-bottom: 0px;
   }
+}
+
+.tel__link:hover, .tel__link:focus {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .tel__number {
