@@ -260,6 +260,10 @@ summary {
   display: list-item;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
 }
@@ -1277,6 +1281,7 @@ img {
 
 .about {
   padding-top: 125px;
+  padding-bottom: 10px;
   background-color: #fff5f6;
 }
 
@@ -2274,6 +2279,11 @@ img {
 
 .font, .contacts__link-name p, .contacts__city-name, .contacts__city-text, .contacts__schedule, .contacts__schedule-time, .contacts__link, .button-location, .button-franchise {
   font-family: 'DM Sans', sans-serif;
+}
+
+.contacts__section {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .background {
